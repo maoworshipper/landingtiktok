@@ -70,8 +70,9 @@ h2{
         background: $warning;
     }
     
-    .carousel-inner .carousel-itemimg {
-        margin: auto;      
+    .carousel-inner .carousel-item img {
+        margin: auto;
+        max-width: 100%;
         }
 }
 
@@ -101,21 +102,24 @@ h2{
 }
 
 .contact{
-    min-height: 618px;
     background-image: url('../images/bkg-hablamos.png');
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 
     .row:first-child{
         padding: 16% 0 15% 0;
     }
 
     h2{
-        font-size: 5em;
+        font-size: 4em;
     }
 
     .foot{
         border-top: 2px solid #fff;
         max-height: 120px;
+        position: inherit;
+        bottom: 0;
 
         .navbar-brand img{
             max-width: 80%;
@@ -159,8 +163,21 @@ h2{
     transform: scale(1)!important;
     transform:none;
   }
+
+  .form-check-input{
+    background-color: transparent;
+    border-color: #FFF;
+}
   
-  
+  .form-check-input:checked {
+    background-color: transparent;
+    border-color: #FFF;
+}
+
+.form-check-input[type=radio]:checked{
+	transform: scale(1);
+	opacity: 1;
+}
 
 
 

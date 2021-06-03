@@ -12918,8 +12918,9 @@ h2, .h2 {
   border-radius: 100%;
   background: #F8EB5D;
 }
-.cta .carousel-inner .carousel-itemimg {
+.cta .carousel-inner .carousel-item img {
   margin: auto;
+  max-width: 100%;
 }
 
 .border-skew {
@@ -12949,19 +12950,22 @@ h2, .h2 {
 }
 
 .contact {
-  min-height: 618px;
   background-image: url("../images/bkg-hablamos.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .contact .row:first-child {
   padding: 16% 0 15% 0;
 }
 .contact h2, .contact .h2 {
-  font-size: 5em;
+  font-size: 4em;
 }
 .contact .foot {
   border-top: 2px solid #fff;
   max-height: 120px;
+  position: inherit;
+  bottom: 0;
 }
 .contact .foot .navbar-brand img {
   max-width: 80%;
@@ -13001,4 +13005,20 @@ h2, .h2 {
           transform: scale(1) !important;
   -webkit-transform: none;
           transform: none;
+}
+
+.form-check-input {
+  background-color: transparent;
+  border-color: #FFF;
+}
+
+.form-check-input:checked {
+  background-color: transparent;
+  border-color: #FFF;
+}
+
+.form-check-input[type=radio]:checked {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
 }
