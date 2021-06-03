@@ -3,14 +3,18 @@ $background2: #EA516E;
 $background3: #575AA3;
 $primary: #0D2232;
 $warning: #F8EB5D;
+$enable-negative-margins: true;
 
 @import "bootstrap/bootstrap.scss";
 @import "fonts/fonts.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+
 body{
     font-family: 'Aktiv Grotesk Corp', sans-serif;
     color: #fff;
+    font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,11 +29,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2{
-    font-size: 2.5em;
+    font-size: 2.8em;
 }
 
 .features{
     background: $background2;
+    min-height: 824px;
+
+        h3{
+            margin-top: 2.9em;
+        }
+
+        p{
+            max-width: 380px;
+        }
 }
 
 .labels{
@@ -37,3 +50,6 @@ h2{
     font-size: 12px;
 }
 
+.ms-15{
+    margin-left: 15%;
+}
