@@ -1,0 +1,31 @@
+$background1: #4BBBBC;
+$background2: #EA516E;
+$background3: #575AA3;
+$warning: #F8EB5D;
+
+@import "bootstrap/bootstrap.scss";
+@import "fonts/fonts.css";
+
+body{
+    font-family: 'Aktiv Grotesk Corp', sans-serif;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Aktiv Grotesk Corp', sans-serif;
+    font-weight: 500;
+}
+
+.principal{
+    background: $background2;
+    background-image: url('../images/chico-guitarra.png'), linear-gradient(180deg, $background1 0%, $background2 100%);
+    background-repeat: no-repeat;
+    background-size: 45% auto, 100%;
+    background-position:top right;
+    min-height: 705px;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
