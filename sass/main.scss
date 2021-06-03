@@ -1,7 +1,7 @@
 $background1: #4BBBBC;
-$background2: #EA516E;
-$background3: #575AA3;
-$primary: #0D2232;
+$background2: #575AA3;
+$primary: #EA516E;
+$secondary: #0D2232;
 $warning: #F8EB5D;
 $enable-negative-margins: true;
 
@@ -23,8 +23,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .principal{
-    background: $background2;
-    background-image: linear-gradient(180deg, $background1 0%, $background2 100%);
+    background: $primary;
+    background-image: linear-gradient(180deg, $background1 0%, $primary 100%);
     background-size: 100%;
 }
 
@@ -33,8 +33,7 @@ h2{
 }
 
 .features{
-    background: $background2;
-    min-height: 824px;
+    background: $primary;
 
         h3{
             margin-top: 2.9em;
@@ -53,3 +52,46 @@ h2{
 .ms-15{
     margin-left: 15%;
 }
+
+.cta{
+    background: $primary;
+    background-image: linear-gradient(180deg, $primary 0%, $background2 100%);
+    background-size: 100%;
+    padding: 4em 0;
+
+    /*.border{
+        height: 2em;
+        position: relative;
+        width: 100%;
+    }
+
+    .border:after{
+        background: inherit;
+  bottom: 0;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-3deg);
+  transform-origin: 100%;
+  width: 100%;
+  z-index: -1;
+    }*/
+    
+}
+
+.contact{
+    min-height: 618px;
+    background-image: url('../images/bkg-hablamos.png');
+    margin-top: -50px;
+    padding-top: 22%;
+
+    h2{
+        font-size: 5em;
+    }
+}
+
+
+
+
