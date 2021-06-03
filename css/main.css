@@ -12908,33 +12908,53 @@ h2, .h2 {
   background-image: linear-gradient(180deg, #EA516E 0%, #575AA3 100%);
   background-size: 100%;
   padding: 4em 0;
-  /*.border{
-        height: 2em;
-        position: relative;
-        width: 100%;
-    }
+}
 
-    .border:after{
-        background: inherit;
+.border-skew {
+  background: #575AA3;
+  height: 7.5em;
+  position: relative;
+  width: 100%;
+  border: none;
+}
+
+.border-skew:after {
+  background: inherit;
+  background-image: url("../images/group-20.png");
+  background-position: bottom -120px left -60px;
+  background-repeat: no-repeat;
   bottom: 0;
-  content: '';
+  content: "";
   height: 100%;
   left: 0;
   position: absolute;
   right: 0;
-  transform: skewY(-3deg);
-  transform-origin: 100%;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
   width: 100%;
-  z-index: -1;
-    }*/
 }
 
 .contact {
   min-height: 618px;
   background-image: url("../images/bkg-hablamos.png");
-  margin-top: -50px;
-  padding-top: 22%;
+  background-repeat: no-repeat;
+}
+.contact .row:first-child {
+  padding: 16% 0 15% 0;
 }
 .contact h2, .contact .h2 {
   font-size: 5em;
+}
+.contact .foot {
+  border-top: 2px solid #fff;
+  max-height: 120px;
+}
+.contact .foot .navbar-brand img {
+  max-width: 80%;
+}
+.contact .foot .nav-link {
+  font-size: 12px;
+  margin-left: 20px;
 }
