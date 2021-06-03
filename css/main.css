@@ -12909,6 +12909,18 @@ h2, .h2 {
   background-size: 100%;
   padding: 4em 0;
 }
+.cta .carousel-indicators {
+  margin-bottom: -3rem;
+}
+.cta .carousel-indicators [data-bs-target] {
+  width: 22px;
+  height: 3px;
+  border-radius: 100%;
+  background: #F8EB5D;
+}
+.cta .carousel-inner .carousel-itemimg {
+  margin: auto;
+}
 
 .border-skew {
   background: #575AA3;
@@ -12957,4 +12969,36 @@ h2, .h2 {
 .contact .foot .nav-link {
   font-size: 12px;
   margin-left: 20px;
+}
+
+.modal-content {
+  background: #EA516E;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4BBBBC), to(#EA516E));
+  background-image: linear-gradient(180deg, #4BBBBC 0%, #EA516E 100%);
+  background-size: 100%;
+}
+.modal-content .modal-header, .modal-content .modal-footer {
+  border: none;
+}
+
+.modal .fade .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.zoom-in {
+  -webkit-transform: scale(0) !important;
+          transform: scale(0) !important;
+  opacity: 0;
+  -webkit-transition: 1s all 0s;
+  transition: 1s all 0s;
+  display: block !important;
+}
+
+.zoom-in.show {
+  opacity: 1;
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+  -webkit-transform: none;
+          transform: none;
 }

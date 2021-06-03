@@ -59,6 +59,20 @@ h2{
     background-size: 100%;
     padding: 4em 0;
     
+    .carousel-indicators{
+        margin-bottom: -3rem;
+    }
+
+    .carousel-indicators [data-bs-target]{
+        width: 22px;
+        height: 3px;
+        border-radius: 100%;
+        background: $warning;
+    }
+    
+    .carousel-inner .carousel-itemimg {
+        margin: auto;      
+        }
 }
 
 .border-skew{
@@ -114,6 +128,39 @@ h2{
     }
 }
 
+.modal-content{
+    background: $primary;
+    background-image: linear-gradient(180deg, $background1 0%, $primary 100%);
+    background-size: 100%;
+
+    .modal-header, .modal-footer{
+        border:none;
+    }
+}
+
+.modal .fade .modal-dialog{
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+  
+  .zoom-in {
+    transform: scale(0)!important;
+    opacity: 0;
+    -webkit-transition: 1s all 0s;
+    -moz-transition: 1s all 0s;
+    -ms-transition: 1s all 0s;
+    -o-transition: 1s all 0s;
+    transition: 1s all 0s;
+    display: block !important;
+  }
+  
+  .zoom-in.show {
+    opacity: 1;
+    transform: scale(1)!important;
+    transform:none;
+  }
+  
+  
 
 
 
